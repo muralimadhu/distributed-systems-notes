@@ -28,3 +28,18 @@ Think about reducing message size. JSON is readable but very large. Binary data 
 #### Messaging
 Mostly involves some kind of a queue manager, and a bunch of queues. Check [ZeroMQ guide](http://zguide.zeromq.org/page:all) for an example
 
+#### Network layers - http://www.geeksforgeeks.org/layers-osi-model/
+* Physical Layer - Converts signal to bits. Physical devices like modems, cables.
+
+* Data Link Layer - Make sure the data is error free. Packet in this layer is called a frame. Ex) device drivers and network interface cards
+
+* Network Layer - Takes care of network routing, i.e selection of shortest path to route the packet to destination
+
+* Transport Layer - Takes care of establishing connection, data transfer etc Ex) TCP, UDP 
+
+* Session Layer - Takes care of maintaing sessions, authentication etc SSH
+
+* Presentation Layer - Takes care of data transformation (Encryption, Compression etc). Ex) SSL
+
+* Application Layer - Bridge to the applications Ex) HTTP, FTP, SMTP etc
+
